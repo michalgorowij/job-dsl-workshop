@@ -21,7 +21,7 @@ job('sample-gradle-build') {
     }
     publishers {
         archiveJunit('**/build/test-results/**/*.xml'){
-            allowEmptyResults()
+            allowEmptyResults(s)
         }
     }
 }
