@@ -1,7 +1,7 @@
 job('sample-gradle-build') {
     steps {
         scm {
-            git('https://github.com/michalgorowij/sample1-gradle-ci.git', "master") {
+            git('https://github.com/michalgorowij/job-dsl-workshop', "master") {
             }
         }
     }
