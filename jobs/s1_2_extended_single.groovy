@@ -1,6 +1,9 @@
 job('sample-gradle-build') {
     steps {
-        scm {git('https://github.com/solidsoft-training/sample1-gradle-ci.git', master, poll: false)}
+        scm {
+            git('https://github.com/michalgorowij/sample1-gradle-ci.git', "master") {
+            }
+        }
     }
     steps {
         /*triggers {
