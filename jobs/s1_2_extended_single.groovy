@@ -21,7 +21,7 @@ job('sample-gradle-build') {
     }
     publishers {
         archiveJunit('**/target/surefire-reports/*.xml'){
-            allowEmptyResults()
+            allowEmptyResults(true)
         }
     }
 }
