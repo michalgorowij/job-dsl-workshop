@@ -4,7 +4,7 @@ job('sample-gradle-build') {
             timestamps()
         }
         scm {
-            git('https://github.com/michalgorowij/job-dsl-workshop', "master") {
+            git('https://github.com/michalgorowij/sample1-gradle-ci.git', "master") {
             }
         }
     }
