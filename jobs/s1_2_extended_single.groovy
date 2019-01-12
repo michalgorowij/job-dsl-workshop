@@ -20,8 +20,8 @@ job('sample-gradle-build') {
         }
     }
     publishers {
-        archiveJunit('**/target/surefire-reports/*.xml'){
-            allowEmptyResults(true)
+        archiveJunit('**/build/test-results/**/*.xml'){
+            allowEmptyResults()
         }
     }
 }
