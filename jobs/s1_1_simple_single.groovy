@@ -1,5 +1,5 @@
-job(
-        steps{
-            print("Hello Job DSL!")
-        }
-)
+job('Simple job'){
+    steps {
+        shell("echo 'Hello world'")
+    }
+}
